@@ -1,5 +1,7 @@
 # 圆形照片画廊 (Circular Photo Gallery)
 
+> 此项目代码由 [Cursor](https://cursor.sh/) 辅助编写
+
 一个基于Next.js和React的交互式圆形照片画廊，允许用户上传照片并在照片之间创建连线。
 
 ## 功能特点
