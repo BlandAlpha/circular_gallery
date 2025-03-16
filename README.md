@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 圆形照片画廊 (Circular Photo Gallery)
 
-## Getting Started
+一个基于Next.js和React的交互式圆形照片画廊，允许用户上传照片并在照片之间创建连线。
 
-First, run the development server:
+## 功能特点
+
+- **圆形布局**：照片自动排列成圆形
+- **动态调整**：照片大小根据数量和容器大小自动调整
+- **拖拽连线**：从一个照片拖拽到另一个照片创建连线
+- **连线样式**：支持多种连线样式（默认、虚线、点线、粗线、红色、绿色）
+- **响应式设计**：适应不同屏幕大小
+- **用户友好**：直观的界面和交互
+
+## 技术栈
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Lucide React (图标库)
+
+## 本地开发
 
 ```bash
+# 安装依赖
+npm install
+
+# 启动开发服务器
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+然后在浏览器中打开 [http://localhost:3000](http://localhost:3000) 查看应用。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 使用方法
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. 点击"上传照片"按钮选择并上传照片
+2. 照片会自动排列成圆形，大小会根据数量和容器大小自动调整
+3. 从一个照片拖拽到另一个照片创建连线
+4. 点击线条中间的控制点访问选项菜单
+5. 在菜单中，您可以删除连线或更改其样式
+6. 悬停在照片上并点击红色X删除照片
 
-## Learn More
+## 构建生产版本
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 许可证
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
